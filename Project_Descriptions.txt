@@ -1,14 +1,16 @@
 
-1. combine state level data which we get it from fact finder Tool on us census bureau as CSV file format.
+1. Using the fact finder Tool on us census bureau to get all State level population data as CSV file format.
 
-2 using the US Census bureau API calls on each to get population (Total pop, Male pop and Female pop) per counties in each state
-as JSON format.
+2  Using the US Census bureau API calls to get population data (Total pop, Male pop and Female pop) per counties in each state
+	as JSON format.
 
 3. Load both dataset in pandas dataframe by filtering only Total pop, Male pop and Female pop fields
    cleanup the total population with some code.
 
-4. calculate percentage of Total pop percentage, Male pop percentage and Female pop percentage per county against each state population
+4. Calculated percentage of Total pop percentage, Male pop percentage and Female pop percentage per county against each state population
    and order the most populated county in each state.
    
-5. Load final data in to CSV file and read it from excel.   
+5. Load final data in the dataframe in Mysql database (inside favorite db)
+
+6. Exported final dataframe to Excel file.
    
